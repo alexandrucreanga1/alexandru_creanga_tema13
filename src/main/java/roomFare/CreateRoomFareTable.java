@@ -7,6 +7,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import static useful.Color.ANSI_GREEN;
+
 public class CreateRoomFareTable {
 
     public static void createRoomFareTable() {
@@ -23,7 +25,7 @@ public class CreateRoomFareTable {
                     "                    );";
 
             statement.executeUpdate(sql);
-            System.out.println("Created table in given database...");
+            System.out.println(ANSI_GREEN + "The table was created !");
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();

@@ -28,7 +28,7 @@ public class Main {
         DataInputRoomFareTable.inputDataRoomFareTable();
 
         CreateAccommodationFareRelationTable.createAccommodationFareRelationTable();
-        DataInputAccommodationFareRelationTable.insertDataIntoAFRTable();
+        DataInputAccommodationFareRelationTable.inputDataAccommodationFareRelationTable();
 
         try (Connection connection = DriverManager.getConnection(ConnectToDb.DB_URL, ConnectToDb.USER, ConnectToDb.PASS);
              Statement statement = connection.createStatement();
